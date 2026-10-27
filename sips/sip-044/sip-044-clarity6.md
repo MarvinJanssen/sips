@@ -10,7 +10,7 @@ Author(s):
 - Jeff Bencin <jeff.bencin@gmail.com>
 - Brice Dobry <brice@stackslabs.com>
 
-Status: Accepted
+Status: Ratified
 
 Consideration: Technical
 
@@ -24,7 +24,8 @@ License: BSD-2-Clause
 
 Sign-off:
 
-- Brice Dobry <brice@stackslabs.com>, Interim Chairperson, Technical CAB; [minutes](../../considerations/minutes/technical-cab/2026-07-10-sip-044-and-045.md)
+- Brice Dobry <brice@stackslabs.com>, Interim Chairperson, Technical CAB;
+  [minutes](../../considerations/minutes/technical-cab/2026-07-10-sip-044-and-045.md)
 
 Discussions-To:
 
@@ -606,6 +607,18 @@ not met within that window, the SIP is Rejected.
 
 If approved, the activation block height will be finalized during vote
 preparation, together with SIP-045.
+
+## Activation Status
+
+The vote concluded with SIP-044 passing by a decisive margin. A total of
+161,443,320 STX participated (77 voters), with all but 2 STX (1 wallet) voting
+'Yes' — effectively unanimous approval.
+
+Results were independently audited directly against the Stacks and Bitcoin
+blockchains using `sip044-audit.mjs` (cloned from the proven SIP-039 audit
+script), and matched ballot.gg's displayed results exactly. The audit script can
+be found
+[here](https://github.com/BlockSurvey/ballot/commit/a3c1a297568f644caaac22c73c6782e5b14a79ee).
 
 # Reference Implementation
 
