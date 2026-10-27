@@ -12,7 +12,7 @@ Type: Meta
 
 Status: Draft
 
-Created: 2026-09-30
+Created: 2026-04-06
 
 License: BSD-2-Clause
 
@@ -27,12 +27,12 @@ Requires: 000
 This SIP defines a formal governance process for the Stacks Improvement Proposal
 (SIP) Steering Committee (SC). Specifically, it establishes rules governing the
 composition of the SC, including the number of active and alternate members,
-qualifications for membership, the process by which new members may be nominated
-and seated, the conduct of all SC correspondence, and the framework by which SC
-members may be compensated for their service. The intent of this SIP is to
-ensure that the SC remains accountable, adequately staffed, and capable of
-fulfilling its duties as described in SIP-000, while maintaining continuity of
-governance across member transitions.
+qualifications for membership, the process by which new members may be
+nominated, seated, and removed, the conduct of all SC correspondence, and the
+framework by which SC members may be compensated for their service. The intent
+of this SIP is to ensure that the SC remains accountable, adequately staffed,
+and capable of fulfilling its duties as described in SIP-000, while maintaining
+continuity of governance across member transitions.
 
 # License and Copyright
 
@@ -59,10 +59,22 @@ process:
   absence of active members).
 
 This SIP does not (and shall not be construed to) grant new powers to the SC
-over and above those defined in SIP-000 or change the current member
-composition.
+over and above those defined in SIP-000, alter the SC's voting thresholds, or
+remove any SC member seated at the time of activation.
 
 # Specification
+
+## Definitions
+
+**SOIF** means the Stacks Open Internet Foundation. A **Board Resolution** is a
+decision of the SOIF Board adopted by a majority of its voting directors, with
+at least two (2) in favour, and published with each director's vote to the
+public mailing list. Every power this SIP grants to SOIF or its Board may only
+be exercised by Board Resolution; no officer, employee, or contractor of SOIF
+may exercise one alone. If no Board Resolution is adopted within the time
+allowed for an action, the Governance Consideration Advisory Board (Governance
+CAB) may take that action by a two-thirds majority vote. The SC may not rescind
+its recognition of the Governance CAB or the Ethics CAB except by a future SIP.
 
 ## Steering Committee Composition
 
@@ -71,8 +83,8 @@ composition.
 The Steering Committee (SC) shall at all times consist of exactly three (3)
 active, voting members. Active members bear the full duties and responsibilities
 of the SC as described in SIP-000, including attending public meetings, voting
-on SIPs, recognizing Consideration Advisory Boards, overseeing SIP activation
-and ratification, and other activities that may be defined in future SC bylaws.
+on SIPs, recognizing Consideration Advisory Boards, and overseeing SIP
+activation and ratification.
 
 ### Alternate Members
 
@@ -99,7 +111,7 @@ official meeting minutes.
 ## Qualifications
 
 The qualifications for SC membership shall remain as defined in SIP-000. For
-reference, all candidates for active or alternate SC membership:
+reference, all candidates for active, alternate, or provisional SC membership:
 
 - Must possess deep domain expertise pertinent to blockchain development;
 - Must possess excellent written communication skills; and
@@ -107,16 +119,16 @@ reference, all candidates for active or alternate SC membership:
   to joining the committee.
 
 All SC members must abide by the SIP Code of Conduct at all times. Failure to
-adhere to the Code of Conduct shall be grounds for immediate removal from the
-SC, with no eligibility to rejoin any SC seat until the matter has been formally
-reviewed and resolved per the relevant Ethics-consideration SIP or, in the
-absence of such a SIP, at the SC's unanimous discretion (excluding the affected
-member).
+adhere to the Code of Conduct shall be grounds for removal from the SC per the
+removal process in this SIP, with no eligibility to rejoin any SC seat until the
+matter has been formally reviewed and resolved per the relevant
+Ethics-consideration SIP or, in the absence of such a SIP, at the SC's unanimous
+discretion (excluding the affected member).
 
 ## Steering Committee Duties and Powers
 
 The duties and powers of the SC shall remain as defined in SIP-000, with some
-clarifications and exceptions added in this section.
+clarifications added in this section.
 
 ### Quorum
 
@@ -129,38 +141,30 @@ voting members shall be required in such cases.
 Alternate members shall only be empowered to vote in place of an active member
 under the following conditions:
 
-- An active member provides advance written notice that they will be absent from
-  a scheduled meeting or vote and fails to provide a written vote for the
-  meeting.
+- An active member provides advance written notice to the public mailing list
+  that they will be absent from a scheduled meeting or vote and fails to provide
+  (or explicitly yields to the alternate) a written vote for the meeting.
 - An active member is unresponsive for a period of fourteen (14) or more
   consecutive calendar days during an active deliberation or vote.
 - An active member has formally vacated their seat, and a successor has not yet
   been seated.
 - An active member is under review for failing to adhere to the SIP Code of
   Conduct.
-- An active member is under review as part of the removal process defined later
-  in this document.
+- An active member is the subject of a published removal intent, for the removal
+  vote on that member only.
 
 When an alternate member votes in place of an active member, this shall be
-recorded in the meeting minutes and published. In no case shall there be more
-than three (3) total votes cast in any SC deliberation. The method by which an
-alternate may be required to cast a vote shall be chosen by the active SC
-members on a case by case basis. (For example: the first alternate who affirms
-their willingness to participate.) The SC may adopt bylaws to further define the
-selection process.
+recorded in the meeting minutes and published to the public mailing list. In no
+case shall there be more than three (3) total votes cast in any SC deliberation.
+The method by which an alternate may be required to cast a vote shall be chosen
+by the active SC members on a case by case basis. (For example: the first
+alternate who affirms their willingness to participate.) The SC may adopt bylaws
+to further define the selection process.
 
-### Voting on Technical and Non-technical SIPs
+### Voting Thresholds
 
-The Steering Committee shall select Recommended SIPs for ratification by moving
-them to Activation-In-Progress status. Technical and Non-technical SIPs require
-a two-thirds majority vote. In the case of 3 voting members, 2 votes in favour
-are required. In case of 2 voting members, both members must vote in favour.
-
-### Voting on Consensus-type SIPs for a hard fork
-
-Full participation of the SC members shall be required and their vote must be
-unanimous. Three votes must be cast and they must all be in favour in order to
-move the SIP to Activation-in-Progress status.
+The SC shall vote on SIPs using the thresholds defined in SIP-000, as amended by
+any subsequent ratified SIP. This SIP does not set or change those thresholds.
 
 ## Correspondence and Public Communication
 
@@ -172,22 +176,27 @@ mailing list. This includes, but is not limited to:
 - Deliberations and votes on SIPs in Recommended status;
 - Discussions regarding the recognition or rescission of Consideration Advisory
   Boards
-- Nomination and seating of new SC members (active or alternate)
+- Nomination, seating, resignation, and removal of SC members (active,
+  alternate, or provisional)
 - Notices of member absences and alternate member substitutions
 - Announcements of public meeting schedules and agendas
 - Publication of meeting minutes
 - Any formal communications between the SC and Consideration Advisory Boards,
-  SIP Editors, or the Stacks Open Internet Foundation.
+  SIP Editors, or SOIF.
 
-The Stacks Open Internet Foundation shall provision and maintain the public
-mailing list infrastructure:
+SOIF shall provision and maintain the public mailing list infrastructure:
 
 - The mailing list archive shall be accessible to the public in read-only form.
 - Any member of the public may subscribe to the mailing list as an observer.
-- Posting rights shall be limited to SC members (active and alternate), the SC's
-  designated moderators and note-takers, the Stacks Open Internet Foundation (in
-  case they need to post a nomination), and, at the SC's discretion, other
+- Posting rights shall be limited to SC members (active, alternate, and
+  provisional), the SC's designated moderators and note-takers, SOIF (to post
+  nominations and Board Resolutions), and, at the SC's discretion, other
   formally recognized parties (e.g., Consideration Advisory Board chairpersons).
+
+The SC shall keep a copy of the archive in the SIPs public repository. If the
+mailing list is unavailable, or an SC member's posting rights are withheld, for
+more than seven (7) days, the SC may conduct official business in a public
+thread in the SIPs repository until the list is restored.
 
 ### Prohibition on Private Deliberation
 
@@ -214,17 +223,14 @@ Nominations for active or alternate SC membership may be submitted only by the
 following parties:
 
 - Any current SC member (excluding alternates).
-- The Stacks Open Internet Foundation Board (acting by unanimous vote of its own
-  membership).
+- The SOIF Board, by unanimous Board Resolution.
 
 SC members may make full use of the community to source potential candidates.
 However, the above parties alone retain the ability to nominate.
 
 To prevent conflicts of interest and to adhere to existing governance standards,
 self-nominations are not permitted. No individual may be nominated by more than
-one nominating party per vacancy. If multiple nominations are received for the
-same vacancy, the SC shall evaluate all nominees and select the most qualified
-candidate by a two-thirds majority vote.
+one nominating party per vacancy.
 
 ### Nomination Procedure
 
@@ -238,7 +244,8 @@ Nominations shall be submitted to the public mailing list and shall include:
 
 - The full name and contact information of the nominee.
 - A statement of the nominee's qualifications relative to those defined in
-  SIP-000 and reiterated in this SIP.
+  SIP-000 and reiterated in this SIP, disclosing any employment, contract, or
+  directorship with SOIF.
 - A brief description of why the nominating party believes the nominee is suited
   to serve on the SC.
 - Written confirmation from the nominee that they accept the nomination, are
@@ -255,42 +262,40 @@ public mailing list in a bid to continue to solicit nominations.
 
 Following the close of the nomination window, a Seating Body shall be formed to
 jointly deliberate and vote to seat one nominee per vacancy. The Seating Body
-shall consist of an equal number of:
+shall consist of an equal number, two (2) or three (3) each, of:
 
 - SC members; and,
-- Voting members of the Stacks Open Internet Foundation Board.
+- SOIF Board voting directors who are not employed or contracted by SOIF,
+  appointed by Board Resolution.
 
-The Seating Body shall consist of no fewer than four (4) members and no more
-than six (6) members. Both parties shall supply an equal number of members, and
-three (3) members at most. If, for any reason, either side cannot supply the
-maximum permitted number of members, then members of the other party must recuse
-themselves so that both parties are equally represented in the Seating Body.
-(For example, if the SC supplies two (2) members, then the Stacks Open Internet
-Foundation board shall also supply (2) members.)
+If either side supplies fewer members, members of the other side shall recuse
+themselves until both are equal. If SOIF cannot supply two (2) such directors
+within fourteen (14) days, or while any provisional SC member holds a seat, the
+Governance CAB shall supply that side instead.
 
 Alternate SC members may only be part of the Seating Body if they are empowered
-to vote per the rules of this SIP. Any nominees that are also a member of the
-Stacks Open Internet Foundation Board shall not be eligible to serve on the
-Seating Body.
-
-Members of the Seating Body may only withdraw if an immediate substitute is
-available. The Seating Body shall automatically dissolve when the Nomination
-Procedure is concluded.
+to vote per the rules of this SIP. No nominee or nominator for the vacancy may
+serve on the Seating Body. Members of the Seating Body may only withdraw if an
+immediate substitute is available. The Seating Body shall automatically dissolve
+when the Nomination Procedure is concluded.
 
 ### Evaluation and Seating
 
 The Seating Body shall deliberate publicly and vote to seat one nominee per
 vacancy. Each member of the Seating Body shall be entitled to cast one (1) vote.
-The vote to seat a nominee shall require a two-thirds majority.
+A nominee is seated with two-thirds of the votes cast, provided at least one
+member of each side has voted.
 
 Voting members will independently assess the nominee on their merits and may
 vote at any point during the thirty (30) day voting window. Members that fail to
-vote within the voting window will be recorded as a no-vote. The vote ends
+vote within the voting window are recorded as not voting. The vote ends
 immediately once all members have voted or the voting window has passed.
 
-If no nominee receives the required two-thirds majority vote, then no seating
-shall occur for that vacancy, and the nomination window shall remain open (or be
-re-opened) per the Nomination Procedure until the vacancy is filled.
+If no nominee is seated, the nomination window shall remain open (or be
+re-opened) per the Nomination Procedure until the vacancy is filled. If a
+vacancy is still unfilled after one hundred and twenty (120) days, the
+Governance CAB shall supply, for that vacancy, whichever side has not voted or
+has rejected every nominee, or the SOIF side if both have.
 
 Once a nominee is voted into a seat, the SC shall announce the seating decision
 on the public mailing list and update the SC's public member roster accordingly.
@@ -318,8 +323,8 @@ soon as they are able by means of the nomination procedure described above.
 
 ## Removal of SC members
 
-SC members, both actives and alternates, shall be subject to removal under the
-following circumstances.
+SC members, both actives and alternates, shall be subject to removal only under
+the following circumstances.
 
 1. The SC member failed to adhere to the SIP Code of Conduct.
 2. The SC member deliberately misrepresented themselves in order to meet the
@@ -328,17 +333,24 @@ following circumstances.
    or more days, has not provided advance written notice that they will be
    absent, and did not empower an alternate to vote in their stead.
 4. The SC member failed to cast a vote for three (3) successive deliberations.
-   (Abstaining shall not be counted as a failure to cast a vote.)
+   (Abstaining, or a properly empowered alternate voting in their stead, shall
+   not be counted as a failure to cast a vote.)
 5. The SC member demonstrably violated the rules on the prohibition of private
    deliberation or the principles laid out in the Compensation section.
 6. The SC member demonstrably acted or intended to act beyond the powers and
    capabilities of the SC.
+7. The SC member failed to perform the transition steps within their own control
+   required by the Activation section.
 
 For the avoidance of doubt: "unresponsive" is understood as not participating in
 the public mailing list when called upon. "Inactive" means not participating in
 public sessions or deliberations where SC members are normally expected. An SC
 member shall not be considered unresponsive or inactive if they have given prior
 notice and followed the correct procedures to empower an alternate.
+
+No party may remove an SC member under any procedure in this SIP unless one of
+the above conditions is met. A member removed under condition 2 or 5 may not
+serve in any SC seat again.
 
 ## SC Member Removal Process
 
@@ -350,15 +362,13 @@ removal conditions mentioned above and must include a body of evidence to
 support their claim. Active members as well as alternates may publish an intent
 to vote for removal. However, an alternate member should first report their
 findings to an active member so they may publish the intent. The intent must be
-public for at least seven (7) days, after which the SC shall vote to remove the
-offending SC member by a two-thirds majority. The offending member shall not be
-entitled to a vote. If the offending member is an active member, then an
-alternate member will be empowered to vote.
+public for at least seven (7) days, during which the affected member may
+respond, after which the SC shall vote to remove the offending SC member by a
+two-thirds majority. The offending member shall not be entitled to a vote. If
+the offending member is an active member, then an alternate member will be
+empowered to vote.
 
-It must be clear that the SC, under no circumstance, shall be able to vote to
-remove an SC member if that member did not meet any of the removal conditions.
-
-### By the Governance CAB, Ethics CAB, and Stacks Open Internet Foundation
+### By the Governance CAB, Ethics CAB, and SOIF
 
 If it is found that the SC can no longer reach a quorum to conduct business,
 then a failsafe procedure may be enacted in order to restore the SC to working
@@ -369,43 +379,46 @@ order.
 The failsafe may only be activated if all of the following conditions are met:
 
 1. The active SC members fail to reach a quorum, regardless of the reasons.
-2. The alternative SC members are unable to be empowered in order to reach the
+2. The alternate SC members are unable to be empowered in order to reach the
    quorum and vote because they themselves are inactive or the seats are vacant.
 3. The SC fails to reach a quorum for over thirty (30) days.
-4. The CABs and Stacks Open Internet Foundation Board made a good-faith attempt
-   to reach out to the SC members, active and alternate, to instruct them to
-   remedy the situation.
+4. The Governance CAB or the SOIF Board made a good-faith attempt, published to
+   the public mailing list, to reach out to the SC members, active and
+   alternate, to instruct them to remedy the situation.
 
 #### Failsafe Procedure
 
 The failsafe procedure can be activated by the following parties, but must do so
 in order:
 
-1. Governance CAB
-2. Ethics CAB
-3. Stacks Open Internet Foundation, acting as a backstop
+1. Governance CAB, by a two-thirds majority vote
+2. Ethics CAB, by a two-thirds majority vote, only if it has at least three (3)
+   members who are not SC members
+3. SOIF, by a Board Resolution of two-thirds of its voting directors, acting as
+   a backstop
 
-If a party fails to activate the failsafe procedure within seven (7) days
-(because for example, there is a problem internal to the party), then the next
-party in line may do so. The next party must demonstrate that the previous party
-failed to activate the failsafe when it should have done so.
-
-The party activating the failsafe shall deliberate in a manner appropriate to
-them and then vote to remove one or more offending SC members. If the party is a
-CAB, then they must pass the resolution with a two-thirds majority vote. If the
-party is the Stacks Open Internet Foundation, then they shall publish their
-decision on the public mailing list and any other public platform they may use.
+If a party fails to activate the failsafe procedure within fourteen (14) days,
+then the next party in line may do so. The next party must demonstrate that the
+previous party failed to activate the failsafe when it should have done so. The
+activating party shall publish its decision on the public mailing list, and may
+remove only SC members who meet removal condition 3 or 4.
 
 ## Inoperability due to resignation or failsafe procedure
 
-The SC may be left inoperable due to sudden resignations or by means of the
-failsafe procedure. If the SC is left with one (1) or zero (0) members at any
-point, then the Stacks Open Internet Foundation shall appoint provisional SC
-members such that the total SC membership is restored to exactly three (3)
-members. These provisional members shall then immediately nominate and vote for
-new members to replace them. The provisional SC members will be considered to
-have resigned as soon as a replacement has been found for each of them.
-Provisional SC members cannot nominate nor vote for each other.
+If the SC is left with fewer than two (2) members able to vote, SOIF shall, by
+Board Resolution within fourteen (14) days, appoint provisional SC members to
+restore the SC to three (3) active members; otherwise the Governance CAB shall
+appoint them. Provisional members must meet the qualifications of this SIP and
+may not be officers, employees, contractors, or directors of SOIF. The
+Governance CAB may void any appointment within seven (7) days by a two-thirds
+majority vote.
+
+Provisional members may only nominate candidates, serve on the Seating Body, and
+conduct required correspondence; they may not vote on SIPs, propose or adopt
+bylaws, or initiate removals. They cannot nominate nor vote for each other, and
+may not be nominated to a permanent seat until six (6) months after their
+service ends. A provisional member is considered to have resigned when a
+replacement is seated, or after ninety (90) days, whichever comes first.
 
 ## Compensation
 
@@ -415,17 +428,18 @@ This SIP establishes a framework for SC member compensation but does not itself
 prescribe specific compensation amounts or funding sources. Specific
 compensation arrangements shall be documented in supplemental materials ratified
 alongside or subsequent to this SIP, and may be revised by a subsequent
-Governance-consideration SIP or by agreement of the Stacks Open Internet
-Foundation Board.
+Governance-consideration SIP, by SC bylaws, or, for SOIF-funded compensation, by
+Board Resolution. No change may take effect for sitting members until thirty
+(30) days after it is published.
 
 ### Eligibility
 
-All active SC members are eligible for compensation for the time they dedicate
-to carrying out their SC duties. Alternate members are eligible for compensation
-when actively substituting for an absent active member, and for their ongoing
-participation in SC business as observers and in preparation for potential
-activation. Moderators and note-takers appointed by the SC are separately
-eligible for fixed, regular bounties as described in SIP-000.
+All active and provisional SC members are eligible for compensation for the time
+they dedicate to carrying out their SC duties. Alternate members are eligible
+for compensation when actively substituting for an absent active member, and for
+their ongoing participation in SC business as observers and in preparation for
+potential activation. Moderators and note-takers appointed by the SC are
+separately eligible for fixed, regular bounties as described in SIP-000.
 
 ### Principles
 
@@ -436,18 +450,19 @@ principles:
   schedules, and funding sources, shall be published on the SC's public mailing
   list and maintained as supplemental documentation to this SIP.
 - **Consistency.** All active members serving concurrently shall receive equal
-  compensation for equivalent duties.
+  compensation for equivalent duties, unless a member has voluntarily declined
+  compensation in writing to the public mailing list. Compensation shall never
+  be conditioned on how a member votes, nor withheld from individual members.
 - **Non-conflicting.** Compensation arrangements shall not create financial
   incentives that conflict with the SC's duty to act in the best interests of
   the broader Stacks user community. SC members who identify a potential
   compensation-related conflict of interest in relation to a particular SIP vote
   shall recuse themselves from that vote and notify the public mailing list.
-- **Foundation-backed.** Compensation shall be sourced from the Stacks Open
-  Internet Foundation or from a funding mechanism ratified by the SC by means of
-  successfully adopting bylaws. No SC member shall accept compensation from any
-  external party in connection with their SC duties without the unanimous
-  written consent of the other active SC members, published to the public
-  mailing list.
+- **Foundation-backed.** Compensation shall be sourced from SOIF, from a funding
+  mechanism ratified under a separate Economic-consideration SIP, or from a
+  funder named in an SC bylaw after fourteen (14) days of public comment. No SC
+  member shall accept compensation from any external party in connection with
+  their SC duties by any other means.
 
 ## Bylaws
 
@@ -458,15 +473,15 @@ shall only have effect if they are limited to changes of the following nature:
 - The duties and responsibilities of moderators and note-takers.
 - The means by which the SC corresponds publicly. (For example, if the mailing
   list becomes unavailable.)
-- How and when SC members are compensated. This allows the SC to accept funding
-  proposals from other entities without requiring a SIP. Adopting bylaws that
-  involve SC compensation shall require unanimous approval.
-- The parties able to activate the failsafe procedure, if one or more of these
-  parties become unavailable.
+- How and when SC members are compensated. Adopting bylaws that involve SC
+  compensation shall require unanimous approval.
+- Replacing a party able to activate the failsafe procedure, if that party
+  ceases to exist, with a Consideration Advisory Board or the SIP Editors. Such
+  bylaws shall require unanimous approval.
 
 Any other matters are reserved and shall only be changed by means of a future
 SIP. SC members that endeavour to adopt SC bylaws that are out of scope are
-immediately subject to removal.
+subject to removal under condition 6.
 
 ### Bylaw Adoption Process
 
@@ -476,7 +491,7 @@ Active members and alternates that have been empowered to vote may cast their
 vote at any time.
 
 Proposals shall stay open for no less than seven (7) days. Bylaws may only be
-adopted if the receive a two-thirds majority vote. Members that fail to vote
+adopted if they receive a two-thirds majority vote. Members that fail to vote
 within the voting window will be recorded as a no-vote. The vote ends
 immediately once all members have voted or the voting window has passed.
 Proposed bylaws that receive unanimous support may be adopted immediately.
@@ -484,18 +499,20 @@ Proposed bylaws that receive unanimous support may be adopted immediately.
 ### Challenging proposed bylaws
 
 Proposals may be challenged if they are deemed to be in contravention of this
-SIP or SIPs and bylaws that are adopted in the future. A succesful challenge
+SIP or SIPs and bylaws that are adopted in the future. A successful challenge
 will strike down the proposal, after which it may be revised and resubmitted as
 another bylaw proposal or a SIP.
 
 #### Challenge Procedure
 
-Only the Governance CAB, Ethics CAB, and Stacks Open Internet Foundation may
-challenge proposed bylaws. The aforementioned parties may challenge proposed
-bylaws during the voting window or newly-adopted bylaws within the first
-fourteen (14) days of adoption.
+Only the Governance CAB and Ethics CAB (each by a two-thirds majority vote, the
+Ethics CAB only if it has at least three (3) members who are not SC members) and
+SOIF (by Board Resolution) may challenge proposed bylaws. The aforementioned
+parties may challenge proposed bylaws during the voting window or newly-adopted
+bylaws within the first fourteen (14) days of adoption. A challenge by SOIF to a
+compensation bylaw requires the Governance CAB's concurrence.
 
-Bylaws that are challenged are be suspended for the duration of the challenge,
+Bylaws that are challenged are suspended for the duration of the challenge,
 which shall be no more than fourteen (14) days. The challenging party shall
 deliberate in a manner appropriate to them and render a verdict within this
 window.
@@ -503,12 +520,8 @@ window.
 The verdict shall either strike the bylaws down or find that they are in fact
 not in contravention. If they are struck down, then the bylaws are void. The
 challenge, deliberation, and verdict shall be posted to the public mailing list.
-
-A challenge may also separately trigger the removal process for the SC member
-that proposed the bylaws. It shall be indicated in the challenge verdict if this
-is the case. SC members cannot be removed by virtue of a successful bylaw
-challenge. The removal process defined in this SIP must be followed in all
-cases.
+SC members cannot be removed by virtue of a successful bylaw challenge. The
+removal process defined in this SIP must be followed in all cases.
 
 # Related Work
 
@@ -533,9 +546,10 @@ been met:
 1. The SC has voted to move this SIP from Recommended status to
    Activation-In-Progress status, by the two-thirds majority threshold
    applicable to non-technical SIPs as defined in SIP-000.
-2. The Stacks Open Internet Foundation has provisioned a public mailing list for
-   SC correspondence and confirmed its availability in writing on that mailing
-   list.
+2. SOIF has provisioned a public mailing list for SC correspondence and
+   confirmed its availability in writing on that mailing list, or, if it has not
+   done so within thirty (30) days, the SC has designated a public thread in the
+   SIPs repository in its place.
 3. The SC has published a public notice on the mailing list acknowledging the
    activation of this SIP and describing the steps it will take to achieve the
    required membership composition within the ninety (90) day transition window.
@@ -551,10 +565,11 @@ the transition period.
 
 If the SC is unable to achieve full compliance within ninety (90) days, it shall
 publish a detailed explanation on the public mailing list and request guidance
-from the Stacks Open Internet Foundation Board, which may grant a one-time
-extension of up to sixty (60) additional days. If that fails, then the SC
-members are in contravention and subject to removal per the procedure outlined
-in this SIP.
+from SOIF, which may grant by Board Resolution a one-time extension of up to
+sixty (60) additional days; an extension not answered within fourteen (14) days
+is granted. SC members who then fail to perform the steps within their own
+control are subject to removal under condition 7; no member may be removed
+because another party failed to seat a nominee or grant an extension.
 
 # Reference Implementations
 
